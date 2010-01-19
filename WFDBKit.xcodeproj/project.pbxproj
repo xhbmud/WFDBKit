@@ -19,6 +19,10 @@
 		AC5A5696108DF01200FE1206 /* wfdbio.c in Sources */ = {isa = PBXBuildFile; fileRef = AC5A568D108DF01200FE1206 /* wfdbio.c */; };
 		AC5A5697108DF01200FE1206 /* WFDBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AC5A568E108DF01200FE1206 /* WFDBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC5A569C108DF05400FE1206 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A569B108DF05400FE1206 /* libcurl.dylib */; };
+		ACEBF508109B1A57002D70ED /* PYSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEBF506109B1A57002D70ED /* PYSignal.h */; };
+		ACEBF509109B1A57002D70ED /* PYSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBF507109B1A57002D70ED /* PYSignal.m */; };
+		ACEBF50C109B1AF5002D70ED /* PYRecording.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEBF50A109B1AF5002D70ED /* PYRecording.h */; };
+		ACEBF50D109B1AF5002D70ED /* PYRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEBF50B109B1AF5002D70ED /* PYRecording.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		AC5A568D108DF01200FE1206 /* wfdbio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wfdbio.c; sourceTree = "<group>"; };
 		AC5A568E108DF01200FE1206 /* WFDBKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFDBKit.h; sourceTree = "<group>"; };
 		AC5A569B108DF05400FE1206 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = /usr/lib/libcurl.dylib; sourceTree = "<absolute>"; };
+		ACEBF506109B1A57002D70ED /* PYSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSignal.h; sourceTree = "<group>"; };
+		ACEBF507109B1A57002D70ED /* PYSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSignal.m; sourceTree = "<group>"; };
+		ACEBF50A109B1AF5002D70ED /* PYRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRecording.h; sourceTree = "<group>"; };
+		ACEBF50B109B1AF5002D70ED /* PYRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRecording.m; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -66,21 +74,11 @@
 		0867D691FE84028FC02AAC07 /* WFDBKit */ = {
 			isa = PBXGroup;
 			children = (
-				AC5A5686108DF01200FE1206 /* annot.c */,
-				AC5A5687108DF01200FE1206 /* calib.c */,
-				AC5A5688108DF01200FE1206 /* ecgcodes.h */,
-				AC5A5689108DF01200FE1206 /* ecgmap.h */,
-				AC5A568A108DF01200FE1206 /* signal.c */,
-				AC5A568B108DF01200FE1206 /* wfdb.h */,
-				AC5A568C108DF01200FE1206 /* wfdbinit.c */,
-				AC5A568D108DF01200FE1206 /* wfdbio.c */,
-				AC5A568E108DF01200FE1206 /* WFDBKit.h */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				AC5A569B108DF05400FE1206 /* libcurl.dylib */,
 			);
 			name = WFDBKit;
 			sourceTree = "<group>";
@@ -106,6 +104,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ACEBF506109B1A57002D70ED /* PYSignal.h */,
+				ACEBF507109B1A57002D70ED /* PYSignal.m */,
+				ACEBF50A109B1AF5002D70ED /* PYRecording.h */,
+				ACEBF50B109B1AF5002D70ED /* PYRecording.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -113,6 +115,7 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC5A569B108DF05400FE1206 /* libcurl.dylib */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -131,6 +134,15 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AC5A5686108DF01200FE1206 /* annot.c */,
+				AC5A5687108DF01200FE1206 /* calib.c */,
+				AC5A5688108DF01200FE1206 /* ecgcodes.h */,
+				AC5A5689108DF01200FE1206 /* ecgmap.h */,
+				AC5A568A108DF01200FE1206 /* signal.c */,
+				AC5A568B108DF01200FE1206 /* wfdb.h */,
+				AC5A568C108DF01200FE1206 /* wfdbinit.c */,
+				AC5A568D108DF01200FE1206 /* wfdbio.c */,
+				AC5A568E108DF01200FE1206 /* WFDBKit.h */,
 				32DBCF5E0370ADEE00C91783 /* WFDBKit_Prefix.pch */,
 			);
 			name = "Other Sources";
@@ -147,6 +159,8 @@
 				AC5A5692108DF01200FE1206 /* ecgmap.h in Headers */,
 				AC5A5694108DF01200FE1206 /* wfdb.h in Headers */,
 				AC5A5697108DF01200FE1206 /* WFDBKit.h in Headers */,
+				ACEBF508109B1A57002D70ED /* PYSignal.h in Headers */,
+				ACEBF50C109B1AF5002D70ED /* PYRecording.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +225,8 @@
 				AC5A5693108DF01200FE1206 /* signal.c in Sources */,
 				AC5A5695108DF01200FE1206 /* wfdbinit.c in Sources */,
 				AC5A5696108DF01200FE1206 /* wfdbio.c in Sources */,
+				ACEBF509109B1A57002D70ED /* PYSignal.m in Sources */,
+				ACEBF50D109B1AF5002D70ED /* PYRecording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WFDBKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = WFDBKit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -275,6 +291,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
